@@ -51,11 +51,7 @@ quality_adj(P, P, _, C, C).
 noun(['flight' | P], P, _, C, C).
 
 
-
-origin_destination(['from', Origin |P],P,_,[origin(Origin)|C],C).
 origin_destination(['from', Origin, 'to', Destination |P],P,_,[origin(Origin), destination(Destination)|C],C).
-origin_destination(['to', Destination, 'from', Origin |P],P,_,[destination(Destination), origin(Origin)|C],C).
-origin_destination(P,P,_,C,C).
 
 
 
